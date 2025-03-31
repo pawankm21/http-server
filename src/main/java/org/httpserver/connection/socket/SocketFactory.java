@@ -1,4 +1,4 @@
-package org.httpserver.socket;
+package org.httpserver.connection.socket;
 import java.net.Socket;
 import java.net.InetAddress;
 import java.io.IOException;
