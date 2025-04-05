@@ -1,4 +1,4 @@
 package org.httpserver.protocol.http.response;
 
-public class Response {
+public class HttpRequestParser {
 }
