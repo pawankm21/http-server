@@ -3,9 +3,7 @@ package org.httpserver.api.routes;
 import lombok.Getter;
 import lombok.Setter;
 import org.httpserver.api.handlers.RequestHandler;
-
-
-import java.net.http.HttpRequest;
+import org.httpserver.protocol.http.request.HttpRequest;
 
 public interface Router {
     RequestHandler resolveHandler(HttpRequest request);

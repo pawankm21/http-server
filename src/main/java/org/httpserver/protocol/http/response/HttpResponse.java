@@ -15,7 +15,6 @@ public class HttpResponse {
     private String statusMessage;
     private final Map<String, Object> headers;
     private final String body;
-
     public static class Builder {
         private int statusCode = 200;
         private String statusMessage = "OK";
@@ -45,5 +44,8 @@ public class HttpResponse {
         public HttpResponse build() {
             return new HttpResponse(statusCode, statusMessage, headers, body);
         }
+    }
+    public static Builder builder() {
+        return new Builder();
     }
 }
